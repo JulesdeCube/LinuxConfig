@@ -1,1 +1,1 @@
-/home/username/.xinitrc
+exec i3 && sleep

@@ -1,1 +1,170 @@
-/home/username/.config/rofi/theme.rasi
+
+* {
+    backgroundColor: #282c34;
+    windowBackgroundColor: #21252b;
+    foregroundColor: #abb2bf;
+    cursorColor: #528bff;
+    selectionColor: #2c313a;
+    searchBarColor: #1b1d23;
+    scrollBar: #373d48;
+
+
+    black:        #000000;
+    red:          #cd3131;
+    green:        #0dbc79;
+    yellow:       #e5e510;
+    blue:         #2472c8;
+    magenta:      #bc3fbc;
+    cyan:         #11a8cd;
+    white:        #e5e5e5;
+    lightBlack:   #666666;
+    lightRed:     #f14c4c;
+    lightGreen:   #23d18b;
+    lightYellow:  #f5f543;
+    lightBlue:    #3b8eea;
+    lightMagenta: #d670d6;
+    lightCyan:    #29b8db;
+    lightWhite:   #fff;
+}
+#window {
+    font: "Roboto 14";
+    /* TOOTLA BACKGROUND */
+    background-color: @backgroundColor;
+    border:           0;
+    padding: 0;
+}
+#mainbox {
+    border:  0;
+    padding: 0;
+    margin: 0;
+    /* main window */
+    background-color: @windowBackgroundColor;
+}
+#message {
+   /* unkonw */
+}
+#textbox {
+    text-color: @foregroundColor;
+
+}
+#listview {
+    /* list of result */
+    fixed-height: 0;
+    border:       0;
+    spacing:      10px ;
+    padding:      0px;
+    background-color: transparent;
+    scrollbar: false;
+    spacing: 0.3em;
+}
+#element {
+    border:  0;
+    padding: 0.2em 0.5em;
+    background-color: transparent;
+}
+#element.normal.normal {
+    text-color:       @foregroundColor;
+    background-color: transparent;
+}
+#element.normal.urgent {
+    text-color: @red;
+    background-color: transparent;
+}
+#element.normal.active {
+    text-color: @cursorColor;
+    background-color: transparent;
+}
+#element.selected.normal {
+    background-color: @selectionColor;
+    text-color:       @lightWhite;
+}
+#element.selected.urgent {
+    background-color: @red;
+    text-color:       @lightWhite;
+}
+#element.selected.active {
+    background-color: @cursorColor;
+    text-color:       @lightWhite;
+}
+#element.alternate.normal {
+    background-color: transparent;
+    text-color:       @foregroundColor;
+}
+#element.alternate.urgent {
+    text-color: @red;
+    background-color: transparent;
+}
+#element.alternate.active {
+    text-color: @cursorColor;
+    
+    background-color: transparent;
+}
+#scrollbar {
+    /* to do */
+    width:        1em;
+    border:       0;
+    handle-width: 8px ;
+    padding:      1px;
+    background-color: @scrollBar;
+    color: @black;
+    background-color: @blue;
+
+
+}
+#sidebar {
+    border:       2px dash 0px 0px ;
+    background-color: #ff0;
+    border-color: @separatorcolor;
+   /* unkonw */
+
+}
+#button.selected {
+   /* unkonw */
+   background-color: #ff0;
+    text-color:       #000;
+}
+separator {
+    background-color: @red;
+    color: #00000000;
+}
+#inputbar {
+    /* toutela bare de recherche */
+    spacing:    0;
+    text-color: @foregroundColor;
+    padding:    0.2em;
+    border: 2px solid;
+    border-color: @cursorColor;
+    margin: 0.5em;
+    background-color: @searchBarColor;
+
+}
+#case-indicator {
+    /* case indicator */
+    padding:0;
+    spacing:    0;
+    text-color: @lightWhite;
+}
+#entry {
+    /* la recherche */
+    spacing:    0;
+    text-color: @lightWhite;
+    
+}
+#prompt {
+    /* le run */
+    spacing:    0;
+    text-color: @lightWhite;
+
+}
+#inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    
+}
+#textbox-prompt-colon {
+    /* les ":" entre le type et la recherche */
+    expand:     false;
+    str:        ": ";
+    margin:     0px 0em 0em 0em ;
+    text-color: @lightWhite;
+
+}

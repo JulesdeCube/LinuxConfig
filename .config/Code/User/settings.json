@@ -1,1 +1,14 @@
-/home/username/.config/Code/User/settings.json
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.activityBar.visible": false,
+  "window.menuBarVisibility": "toggle",
+  "workbench.colorTheme": "Atom One Dark",
+  "window.zoomLevel": 0,
+  "workbench.statusBar.visible": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorCustomizations": {
+    "tab.activeBorderTop": "#528bff",
+  },
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false
+}
