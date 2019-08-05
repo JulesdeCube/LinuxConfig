@@ -1,4 +1,4 @@
-<img src="./df" alt="🔧" align="right" style="font-size:20vw"/>
+<img src="./images/dotFile-Logo.svg" alt="🔧" align="right"/>
 
 # .file
 This is my configuration file for [i3](https://i3wm.org/) and [ArchLinux](https://www.archlinux.org/)
